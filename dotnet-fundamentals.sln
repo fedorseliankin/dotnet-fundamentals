@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-fundamentals", "dotnet-fundamentals\dotnet-fundamentals.csproj", "{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64632EB8-DC0B-4ED8-A3E1-BD1E2F07CC4A}
+	EndGlobalSection
+EndGlobal
