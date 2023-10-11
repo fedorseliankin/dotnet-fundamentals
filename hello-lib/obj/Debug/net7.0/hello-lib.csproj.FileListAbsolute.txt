@@ -1,0 +1,12 @@
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/bin/Debug/net7.0/hello-lib.deps.json
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/bin/Debug/net7.0/hello-lib.dll
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/bin/Debug/net7.0/hello-lib.pdb
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/hello-lib.csproj.AssemblyReference.cache
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/hello-lib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/hello-lib.AssemblyInfoInputs.cache
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/hello-lib.AssemblyInfo.cs
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/hello-lib.csproj.CoreCompileInputs.cache
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/hello-lib.dll
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/refint/hello-lib.dll
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/hello-lib.pdb
+/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/Debug/net7.0/ref/hello-lib.dll

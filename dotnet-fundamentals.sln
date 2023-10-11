@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1706.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-fundamentals", "dotnet-fundamentals\dotnet-fundamentals.csproj", "{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hello-lib", "hello-lib\hello-lib.csproj", "{9F1CD797-7380-41CF-A2A8-508789C76D66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{127DDCE9-54EA-48A3-9FEC-3D0105FCAF75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F1CD797-7380-41CF-A2A8-508789C76D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F1CD797-7380-41CF-A2A8-508789C76D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F1CD797-7380-41CF-A2A8-508789C76D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F1CD797-7380-41CF-A2A8-508789C76D66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
