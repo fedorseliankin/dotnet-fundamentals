@@ -1,7 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-using hello_lib;
-string username = Console.ReadLine();
-Console.WriteLine("Hello, " + username);
+﻿using FileSystemVisitor;
 
-Class1.hello();
-
+Console.WriteLine("Input directory path: ");
+string path = Console.ReadLine();
+//Console.WriteLine("Input filter by date: ");
+//string filter = Console.ReadLine();
+//new DirectoryInfo($@"{path}");
+FileSystemVisitorCL fileSystemVisitor = new FileSystemVisitorCL(new DirectoryInfo($@"{path}"));
+foreach (string item in fileSystemVisitor.getEntries())
+{
+    Console.WriteLine(item);
+}
