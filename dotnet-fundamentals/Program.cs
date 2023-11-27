@@ -9,7 +9,7 @@ FileSystemVisitorCL fileSystemVisitor = new(
     filter is null or "" ? null : (string name) => name.Contains(filter)
 );
 
-foreach (string item in fileSystemVisitor.getEntries())
+foreach (string item in fileSystemVisitor.GetEntries())
 {
     Console.WriteLine(item);
 }
