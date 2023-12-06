@@ -10,5 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\hello-lib\hello-lib.csproj" />
+    <ProjectReference Include="..\FileSystemVisitor\FileSystemVisitor.csproj" />
   </ItemGroup>
 </Project>

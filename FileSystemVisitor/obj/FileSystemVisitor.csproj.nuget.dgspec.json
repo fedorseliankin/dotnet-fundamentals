@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/hello-lib.csproj": {}
+    "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/FileSystemVisitor/FileSystemVisitor.csproj": {}
   },
   "projects": {
-    "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/hello-lib.csproj": {
+    "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/FileSystemVisitor/FileSystemVisitor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/hello-lib.csproj",
-        "projectName": "hello-lib",
-        "projectPath": "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/hello-lib.csproj",
+        "projectUniqueName": "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/FileSystemVisitor/FileSystemVisitor.csproj",
+        "projectName": "FileSystemVisitor",
+        "projectPath": "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/FileSystemVisitor/FileSystemVisitor.csproj",
         "packagesPath": "/Users/fedor/.nuget/packages/",
-        "outputPath": "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/hello-lib/obj/",
+        "outputPath": "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/FileSystemVisitor/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
