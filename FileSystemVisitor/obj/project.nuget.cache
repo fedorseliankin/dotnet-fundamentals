@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "G9bq84Bi5lObZVlZne839PrYBHd4VmzEt81aix2+aVFlf1cvtYTiGr2NHOTIpBas4DxDzRsGm5BVbH6H0T+Ugw==",
+  "dgSpecHash": "K597z3+XZlG4ldnwaEnG4oYyylj+ARrTS4156HdsKGa5D4spaURkA/T1lq2ZVmSSxCqT/YZ6znthvuZa/Umk4g==",
   "success": true,
   "projectFilePath": "/Users/fedor/study/dotnet-fundamentals/dotnet-fundamentals/FileSystemVisitor/FileSystemVisitor.csproj",
   "expectedPackageFiles": [],

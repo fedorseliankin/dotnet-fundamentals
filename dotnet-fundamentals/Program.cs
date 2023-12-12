@@ -1,30 +1,30 @@
-﻿using FileSystemVisitor;
+﻿//using static Task1.ExceptionTask1;
 
-Console.WriteLine("Input directory path: ");
-string path = Console.ReadLine();
-Console.WriteLine("Input filtering string");
-string filter = Console.ReadLine();
-Console.WriteLine("Should abort on first fullmatch found? (y/n)");
-string shouldAbort = Console.ReadLine();
-Console.WriteLine("Should show files/directories/all items found? (f/d/all)");
-string show = Console.ReadLine();
-FileSystemVisitorCL fileSystemVisitor = new(
-    new DirectoryInfo($@"{path}"),
-    filter is null or "" ? null : (string name) => {
-        if (name.Contains(filter)) {
-            if (name.Equals(filter))
-            {
-                return CheckResult.Equals;
-            }
-            return CheckResult.Contains;
-        }
-        return CheckResult.No;
-    },
-    show is null ? "" : show,
-    shouldAbort is null ? "n" : shouldAbort
-);
+//while (true)
+//{
+//    try
+//    {
+//        string userInput = Console.ReadLine();
+//        ExeptionMessage(userInput);
+//    } catch(Exception e)
+//    {
+//        Console.WriteLine(e);
+//    }
 
-foreach (string item in fileSystemVisitor.GetEntries())
+//}
+
+using Task2;
+var parser = new ExceptionNumberParser();
+while (true)
 {
-    Console.WriteLine(item);
+    try
+    {
+        string userInput = Console.ReadLine();
+        Console.WriteLine("digit parsed: " + parser.Parse(userInput));
+    }
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+    }
+
 }

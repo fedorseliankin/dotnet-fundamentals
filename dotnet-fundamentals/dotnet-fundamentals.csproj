@@ -12,4 +12,10 @@
     <ProjectReference Include="..\hello-lib\hello-lib.csproj" />
     <ProjectReference Include="..\FileSystemVisitor\FileSystemVisitor.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="DoNotChange\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DoNotChange\" />
+  </ItemGroup>
 </Project>
