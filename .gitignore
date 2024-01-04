@@ -403,3 +403,10 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+FileSystemVisitor/bin/Debug/net7.0/FileSystemVisitor.dll
+FileSystemVisitor/obj
+hello-lib/bin
+hello-lib/obj
+Reflection/bin
+Reflection/obj
+Task1/obj

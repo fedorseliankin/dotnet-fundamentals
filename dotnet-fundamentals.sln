@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemVisitor", "FileSy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1", "Task1\Task1.csproj", "{9F821338-1769-406F-ABE4-2B9A5A776028}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks", "DataStructures\Tasks\Tasks.csproj", "{600F2563-EFD7-4435-8C46-90DE9D205EAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks.Tests", "DataStructures\Tasks.Tests\Tasks.Tests.csproj", "{F61AFF25-FAB2-451F-B469-765973450AE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{9F821338-1769-406F-ABE4-2B9A5A776028}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F821338-1769-406F-ABE4-2B9A5A776028}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F821338-1769-406F-ABE4-2B9A5A776028}.Release|Any CPU.Build.0 = Release|Any CPU
+		{600F2563-EFD7-4435-8C46-90DE9D205EAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600F2563-EFD7-4435-8C46-90DE9D205EAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600F2563-EFD7-4435-8C46-90DE9D205EAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600F2563-EFD7-4435-8C46-90DE9D205EAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F61AFF25-FAB2-451F-B469-765973450AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61AFF25-FAB2-451F-B469-765973450AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61AFF25-FAB2-451F-B469-765973450AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61AFF25-FAB2-451F-B469-765973450AE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
