@@ -44,13 +44,7 @@ namespace Tasks
         {
         }
 
-        object IEnumerator.Current
-        {
-            get
-            {
-                return Current;
-            }
-        }
+        object IEnumerator.Current => Current;
 
         public T Current
         {
@@ -100,7 +94,7 @@ namespace Tasks
         }
         public void AddAt(int index, T e)
         {
-            if (index < 0 || index > Length || (Length == 0 && index != 0))
+            if (index < 0 || index > Length || (First is null && index != 0))
             {
                 throw new IndexOutOfRangeException();
             }
@@ -128,7 +122,7 @@ namespace Tasks
 
         public T ElementAt(int index)
         {
-            if (index < 0 || index >= Length || Length == 0)
+            if (index < 0 || index >= Length || First is null)
             {
                 throw new IndexOutOfRangeException();
             }
@@ -157,7 +151,7 @@ namespace Tasks
 
         public T RemoveAt(int index)
         {
-            if (index < 0 || index >= Length || Length == 0)
+            if (index < 0 || index >= Length || First is null)
             {
                 throw new IndexOutOfRangeException();
             }
