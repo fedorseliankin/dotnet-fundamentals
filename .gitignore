@@ -410,3 +410,9 @@ hello-lib/obj
 Reflection/bin
 Reflection/obj
 Task1/obj
+HarryPotter/bin
+HarryPotter/obj
+HarryPoter.Tests/bin
+HarryPoter.Tests/obj
+FizzBuzz.Tests/obj
+FizzBuzz/obj

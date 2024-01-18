@@ -16,7 +16,6 @@ public class FizzBuzzTests
     [TestMethod]
     public void GetFizzBuzz_InputIsDivisibleBy3_ReturnsFizz()
     {
-        // Arrange
         // Act
         var result = FizzBuzz.GetFizzBuzz(6);
         // Assert
@@ -26,7 +25,6 @@ public class FizzBuzzTests
     [TestMethod]
     public void GetFizzBuzz_InputIsDivisibleBy5_ReturnsBuzz()
     {
-        // Arrange
         // Act
         var result = FizzBuzz.GetFizzBuzz(10);
         // Assert
@@ -36,7 +34,6 @@ public class FizzBuzzTests
     [TestMethod]
     public void GetFizzBuzz_InputIsNotDivisibleBy3Or5_ReturnsInputAsString()
     {
-        // Arrange
         // Act
         var result = FizzBuzz.GetFizzBuzz(7);
         // Assert
