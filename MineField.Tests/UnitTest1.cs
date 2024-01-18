@@ -1,5 +1,4 @@
-﻿using MineField;
-namespace MineField.Tests;
+﻿namespace MineField.Tests;
 
 [TestClass]
 public class UnitTest1
