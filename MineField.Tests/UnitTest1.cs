@@ -1,5 +1,4 @@
-﻿using MineField;
-namespace MineField.Tests;
+﻿namespace MineField.Tests;
 
 [TestClass]
 public class UnitTest1
@@ -23,7 +22,7 @@ public class UnitTest1
         };
 
         // Act
-        int[,] output = MineField.processField(input);
+        int[,] output = MineField.ProcessField(input);
 
         // Assert
         CollectionAssert.AreEqual(expectedField, output);
@@ -40,6 +39,6 @@ public class UnitTest1
         };
 
         // Act
-        MineField.processField(input);
+        MineField.ProcessField(input);
     }
 }

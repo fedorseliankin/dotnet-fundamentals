@@ -5,16 +5,16 @@
         public static void Main()
         {
             Console.Write('\0');
-            char[,] input = readField();
-            printField(processField(input));
+            char[,] input = ReadField();
+            PrintField(ProcessField(input));
         }
 
-        public static char[,] readField()
+        public static char[,] ReadField()
         {
 
-            string[] Sizes = Console.ReadLine()!.Split(" ");
-            int N = int.Parse(Sizes[0]);
-            int M = int.Parse(Sizes[1]);
+            string[] sizes = Console.ReadLine()!.Split(" ");
+            int N = int.Parse(sizes[0]);
+            int M = int.Parse(sizes[1]);
             char[,] field = new char[M, N];
             for (int i = 0; i < M; i++)
             {
@@ -27,7 +27,7 @@
             return field;
         }
 
-        public static int[,] processField(char[,] input)
+        public static int[,] ProcessField(char[,] input)
         {
             int M = input.GetLength(0);
             int N = input.GetLength(1);
@@ -80,7 +80,7 @@
             return field;
         }
 
-        public static void printField(int[,] field)
+        public static void PrintField(int[,] field)
         {
             Console.Clear();
             int M = field.GetLength(0);
