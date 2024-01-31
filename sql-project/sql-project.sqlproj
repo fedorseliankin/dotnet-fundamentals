@@ -57,4 +57,16 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo.Adress.sql" />
+    <Build Include="dbo.company.sql" />
+    <Build Include="dbo.employee.sql" />
+    <Build Include="dbo.person.sql" />
+    <Build Include="postdeploy.sql" />
+    <Build Include="dbo.insert_employee.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dbo.EmployeeInfo.sql" />
+    <None Include="dbo.employee_trigger.sql" />
+  </ItemGroup>
 </Project>
