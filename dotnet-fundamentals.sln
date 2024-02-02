@@ -124,13 +124,10 @@ Global
 		{8DCC866E-6959-48FA-8469-AEF2CE26F02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DCC866E-6959-48FA-8469-AEF2CE26F02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DCC866E-6959-48FA-8469-AEF2CE26F02E}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< Updated upstream
 		{335935C7-7D06-40CE-900C-1AF8537D66D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{335935C7-7D06-40CE-900C-1AF8537D66D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335935C7-7D06-40CE-900C-1AF8537D66D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{335935C7-7D06-40CE-900C-1AF8537D66D6}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
