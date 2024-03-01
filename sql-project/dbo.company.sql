@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[Company]
+(
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Name] NVARCHAR(20) NOT NULL,
+	[AdressID] INT REFERENCES Address(Id),
+)

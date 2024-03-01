@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection", "Reflection\Re
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "sql-project", "sql-project\sql-project.sqlproj", "{3BF59077-FBE0-44E3-948A-20A655D3F135}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "sql-project", "sql-project\sql-project.sqlproj", "{3BF59077-FBE0-44E3-948A-20A655D3F135}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySerialization", "BinarySerialization\BinarySerialization.csproj", "{83576BED-C7F6-4AFA-A080-138AE07C8C41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLSerialization", "XMLSerialization\XMLSerialization.csproj", "{41F98BEA-BF87-4DE0-85FE-4678ED8D640A}"
@@ -39,11 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONSerialization", "JSONSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISerializibleProject", "ISerializibleProject\ISerializibleProject.csproj", "{8DCC866E-6959-48FA-8469-AEF2CE26F02E}"
 EndProject
-<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCloningSerialization", "DeepCloningSerialization\DeepCloningSerialization.csproj", "{335935C7-7D06-40CE-900C-1AF8537D66D6}"
 EndProject
-=======
->>>>>>> Stashed changes
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
