@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Serilog;
+using Serilog.Events;
+using System;
 
 namespace BrainstormSessions
 {
@@ -7,7 +10,33 @@ namespace BrainstormSessions
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.Console()
+                .WriteTo.File($"logs/brainStormSessions.log", rollingInterval: RollingInterval.Hour)
+                .WriteTo.Email(
+                    fromEmail: "fedor_seliankin@epam.com",
+                    toEmail: "fedor_seliankin@epam.com",
+                    mailServer: "mailserver.com",                    
+                    restrictedToMinimumLevel: LogEventLevel.Error,
+                    mailSubject: "Log Notification",
+                    batchPostingLimit: 1
+                )
+                .CreateLogger();
+
+            try
+            {
+                Log.Information("Application startup");
+                CreateHostBuilder(args).Build().Run();
+            }
+            catch (Exception e)
+            {
+                Log.Fatal(e, "Application start-up failed");
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -15,6 +44,6 @@ namespace BrainstormSessions
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                }).UseSerilog();
     }
 }

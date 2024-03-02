@@ -6,16 +6,19 @@ using BrainstormSessions.ClientModels;
 using BrainstormSessions.Core.Interfaces;
 using BrainstormSessions.Core.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace BrainstormSessions.Api
 {
     public class IdeasController : ControllerBase
     {
         private readonly IBrainstormSessionRepository _sessionRepository;
+        private readonly ILogger<IdeasController> _logger;
 
-        public IdeasController(IBrainstormSessionRepository sessionRepository)
+        public IdeasController(IBrainstormSessionRepository sessionRepository, ILogger<IdeasController> logger)
         {
             _sessionRepository = sessionRepository;
+            _logger = logger;
         }
 
         #region snippet_ForSessionAndCreate
@@ -44,12 +47,14 @@ namespace BrainstormSessions.Api
         {
             if (!ModelState.IsValid)
             {
+                _logger.LogError("Model state is invalid", model);
                 return BadRequest(ModelState);
             }
 
             var session = await _sessionRepository.GetByIdAsync(model.SessionId);
             if (session == null)
             {
+                _logger.LogError("Session is not available", model);
                 return NotFound(model.SessionId);
             }
 
@@ -60,6 +65,7 @@ namespace BrainstormSessions.Api
                 Name = model.Name
             };
             session.AddIdea(idea);
+            _logger.LogInformation($"New idea was created.", idea);
 
             await _sessionRepository.UpdateAsync(session);
 
@@ -77,6 +83,7 @@ namespace BrainstormSessions.Api
 
             if (session == null)
             {
+                _logger.LogError("Session is not available", sessionId);
                 return NotFound(sessionId);
             }
 
@@ -101,6 +108,7 @@ namespace BrainstormSessions.Api
         {
             if (!ModelState.IsValid)
             {
+                _logger.LogError("Model state is invalid", model);
                 return BadRequest(ModelState);
             }
 
@@ -108,6 +116,7 @@ namespace BrainstormSessions.Api
 
             if (session == null)
             {
+                _logger.LogError("Session is not available", model.SessionId);
                 return NotFound(model.SessionId);
             }
 

@@ -1,21 +1,26 @@
-﻿using System.Threading.Tasks;
+﻿﻿using System.Threading.Tasks;
 using BrainstormSessions.Core.Interfaces;
 using BrainstormSessions.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace BrainstormSessions.Controllers
 {
     public class SessionController : Controller
     {
         private readonly IBrainstormSessionRepository _sessionRepository;
+        private readonly ILogger<SessionController> _logger;
 
-        public SessionController(IBrainstormSessionRepository sessionRepository)
+        public SessionController(IBrainstormSessionRepository sessionRepository, ILogger<SessionController> logger)
         {
             _sessionRepository = sessionRepository;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Index(int? id)
         {
+            _logger.LogDebug($"ID:{id}");
+
             if (!id.HasValue)
             {
                 return RedirectToAction(actionName: nameof(Index),
@@ -25,6 +30,7 @@ namespace BrainstormSessions.Controllers
             var session = await _sessionRepository.GetByIdAsync(id.Value);
             if (session == null)
             {
+                _logger.LogError("Session not found.", id.Value);
                 return Content("Session not found.");
             }
 
