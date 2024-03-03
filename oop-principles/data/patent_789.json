@@ -1,0 +1,8 @@
+{
+  "CardNumber": "789",
+  "Title": "Example Patent",
+  "Authors": [ "Author1", "Author2" ],
+  "DatePublished": "2021-09-01",
+  "ExpirationDate": "2041-09-01",
+  "UniqueId": "US1234567A"
+}
