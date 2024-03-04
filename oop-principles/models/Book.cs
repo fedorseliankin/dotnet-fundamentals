@@ -12,8 +12,6 @@ namespace oop_principles.models
         public string CardNumber { get; set; }
         public string Title { get; set; }
 
-        // Напишите здесь значения уникальных свойств ...
-
         public string GetCardInfo()
         {
             return $"[Book] Title: {Title}";
