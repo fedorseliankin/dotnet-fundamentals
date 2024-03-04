@@ -21,7 +21,7 @@ namespace oop_principles.services
             { "book", TimeSpan.FromMinutes(30) },
             { "localizedBook", TimeSpan.FromMinutes(30) },
             { "patent", TimeSpan.FromDays(1) },
-            { "magazine", null },  // Null value for no expiration.
+            { "magazine", null },
         };
         }
 
