@@ -31,17 +31,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection", "Reflection\Re
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "sql-project", "sql-project\sql-project.sqlproj", "{3BF59077-FBE0-44E3-948A-20A655D3F135}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "sql-project", "sql-project\sql-project.sqlproj", "{3BF59077-FBE0-44E3-948A-20A655D3F135}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySerialization", "BinarySerialization\BinarySerialization.csproj", "{83576BED-C7F6-4AFA-A080-138AE07C8C41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySerialization", "BinarySerialization\BinarySerialization.csproj", "{83576BED-C7F6-4AFA-A080-138AE07C8C41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XMLSerialization", "XMLSerialization\XMLSerialization.csproj", "{41F98BEA-BF87-4DE0-85FE-4678ED8D640A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLSerialization", "XMLSerialization\XMLSerialization.csproj", "{41F98BEA-BF87-4DE0-85FE-4678ED8D640A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JSONSerialization", "JSONSerialization\JSONSerialization.csproj", "{2729483D-AFCC-4296-AF29-0E62E9F00951}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONSerialization", "JSONSerialization\JSONSerialization.csproj", "{2729483D-AFCC-4296-AF29-0E62E9F00951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISerializibleProject", "ISerializibleProject\ISerializibleProject.csproj", "{8DCC866E-6959-48FA-8469-AEF2CE26F02E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISerializibleProject", "ISerializibleProject\ISerializibleProject.csproj", "{8DCC866E-6959-48FA-8469-AEF2CE26F02E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCloningSerialization", "DeepCloningSerialization\DeepCloningSerialization.csproj", "{335935C7-7D06-40CE-900C-1AF8537D66D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCloningSerialization", "DeepCloningSerialization\DeepCloningSerialization.csproj", "{335935C7-7D06-40CE-900C-1AF8537D66D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainstormSessions", "Logging\BrainstormSessions\BrainstormSessions.csproj", "{4A157AE0-250F-4500-B1C7-552FABCE51DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainstormSessions.Test", "Logging\BrainstormSessions.Test\BrainstormSessions.Test.csproj", "{10E77636-5AB4-4915-99F0-CB607B5C0EB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +129,14 @@ Global
 		{335935C7-7D06-40CE-900C-1AF8537D66D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335935C7-7D06-40CE-900C-1AF8537D66D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{335935C7-7D06-40CE-900C-1AF8537D66D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A157AE0-250F-4500-B1C7-552FABCE51DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A157AE0-250F-4500-B1C7-552FABCE51DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A157AE0-250F-4500-B1C7-552FABCE51DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A157AE0-250F-4500-B1C7-552FABCE51DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E77636-5AB4-4915-99F0-CB607B5C0EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E77636-5AB4-4915-99F0-CB607B5C0EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E77636-5AB4-4915-99F0-CB607B5C0EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E77636-5AB4-4915-99F0-CB607B5C0EB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
