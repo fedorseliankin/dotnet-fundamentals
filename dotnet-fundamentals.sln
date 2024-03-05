@@ -42,6 +42,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepCloningSerialization", "DeepCloningSerialization\DeepCloningSerialization.csproj", "{335935C7-7D06-40CE-900C-1AF8537D66D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oop-principles", "oop-principles\oop-principles.csproj", "{BDDAC345-03ED-4E8E-94A2-B8B747059075}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainstormSessions", "Logging\BrainstormSessions\BrainstormSessions.csproj", "{4A157AE0-250F-4500-B1C7-552FABCE51DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BrainstormSessions.Test", "Logging\BrainstormSessions.Test\BrainstormSessions.Test.csproj", "{10E77636-5AB4-4915-99F0-CB607B5C0EB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +134,14 @@ Global
 		{BDDAC345-03ED-4E8E-94A2-B8B747059075}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDDAC345-03ED-4E8E-94A2-B8B747059075}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDDAC345-03ED-4E8E-94A2-B8B747059075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A157AE0-250F-4500-B1C7-552FABCE51DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A157AE0-250F-4500-B1C7-552FABCE51DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A157AE0-250F-4500-B1C7-552FABCE51DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A157AE0-250F-4500-B1C7-552FABCE51DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10E77636-5AB4-4915-99F0-CB607B5C0EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E77636-5AB4-4915-99F0-CB607B5C0EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E77636-5AB4-4915-99F0-CB607B5C0EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E77636-5AB4-4915-99F0-CB607B5C0EB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
