@@ -52,7 +52,6 @@ public class ProductRepositoryTests
             return false;
         if (heightParam == null || Convert.ToDecimal(heightParam.Value) != expectedProduct.Height)
             return false;
-        // include all other check conditions
 
         return true;
     }
