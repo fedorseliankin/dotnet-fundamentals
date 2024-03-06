@@ -1,9 +1,9 @@
 ﻿using AdoNet.models;
 using AdoNet.repositories;
 using AdoNet.services;
-ADOHelper aDOHelper = new ADOHelper("data source=DESKTOP-DK1A54F;initial catalog=MyDatabase;trusted_connection=true");
-var or = new OrderRepository(aDOHelper);
-var pr = new ProductRepository(aDOHelper);
+ADOHelper myADOHelper = new ADOHelper("example");
+var or = new OrderRepository(myADOHelper);
+var pr = new ProductRepository(myADOHelper);
 var order = new Order()
     {
         CreatedDate = DateTime.Now,
