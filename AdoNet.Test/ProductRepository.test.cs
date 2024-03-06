@@ -52,7 +52,6 @@ public class ProductRepositoryTests
             return false;
         if (heightParam == null || Convert.ToDecimal(heightParam.Value) != expectedProduct.Height)
             return false;
-        // include all other check conditions
 
         return true;
     }
@@ -132,7 +131,6 @@ public class ProductRepositoryTests
     {
         var idParam = parameters.FirstOrDefault(x => x.ParameterName == "@Id");
         var nameParam = parameters.FirstOrDefault(x => x.ParameterName == "@Name");
-        // include all other parameters 
 
         if (idParam == null || Convert.ToInt32(idParam.Value) != expectedProduct.Id)
             return false;
