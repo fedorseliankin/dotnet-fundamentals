@@ -16,5 +16,7 @@ namespace AdoNet.repositories
         public List<T> ExecuteReader<T>(string query, List<SqlParameter> parameters, Func<SqlDataReader, T> convert);
 
         public void ExecuteTransaction(string procedureName, List<SqlParameter> parameters);
+
+        public IDataReaderWrapper ExecuteReaderWithConnection(string command, List<SqlParameter> parameters);
     }
 }

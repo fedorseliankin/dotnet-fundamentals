@@ -143,29 +143,33 @@ public class ProductRepositoryTests
     }
 
     [TestMethod]
-    public void GetAll_ReturnsListOfProducts()
+    public void GetAll_InvokesDataReaderWithCorrectQueryAndReturnsProducts()
     {
         // Arrange
-        string expectedQuery = "SELECT * FROM Product";
+        string query = "SELECT * FROM Products";
 
-        var products = new List<Product>
-    {
-        new Product { Id = 1, Name = "Product1", Description = "Description1", Weight = 1.0M, Height = 2.0M, Width = 3.0M, Length = 4.0M },
-        new Product { Id = 2, Name = "Product2", Description = "Description2", Weight = 1.5M, Height = 2.5M, Width = 3.5M, Length = 4.5M }
-    };
+        var mockReader = new Mock<IDataReaderWrapper>();
+        mockReader.SetupSequence(r => r.Read())
+            .Returns(true)
+            .Returns(true)
+            .Returns(false);
 
-        mockAdoHelper.Setup(m => m.ExecuteReader(
-            It.Is<string>(query => query == expectedQuery),
-            It.IsAny<List<SqlParameter>>(),
-            It.IsAny<Func<SqlDataReader, Product>>())
-        ).Returns(products);
+
+        mockAdoHelper.Setup(m => m.ExecuteReaderWithConnection(It.IsAny<string>(), It.IsAny<List<SqlParameter>>()))
+            .Returns(mockReader.Object);
+
+        mockReader.Setup(r => r.GetInt32(0)).Returns(1);
+        mockReader.Setup(r => r.GetString(1)).Returns("Product 1");
+        mockReader.Setup(r => r.GetString(2)).Returns("Product 1 Description");
+
+        mockAdoHelper.Setup(m => m.ExecuteReaderWithConnection(query, It.IsAny<List<SqlParameter>>())).Returns(mockReader.Object);
 
         // Act
         var result = productRepository.GetAll();
 
         // Assert
-        Assert.IsNotNull(result);
-        Assert.AreEqual(products.Count, result.Count);
+        Assert.AreEqual(2, result.Count());
+        Assert.AreEqual("Product 1", result.First().Name);
     }
 
     [TestMethod]

@@ -83,22 +83,29 @@ namespace AdoNet.services
             _helper.ExecuteCommand(query, parameters);
         }
 
-        public List<Product> GetAll()
+        public IEnumerable<Product> GetAll()
         {
-            string query = "SELECT * FROM Product";
-            return _helper.ExecuteReader(query, null, (rdr) =>
+            List<Product> products = new List<Product>();
+            var parameters = new List<SqlParameter>();
+
+            using (var reader = _helper.ExecuteReaderWithConnection("SELECT * FROM Product", parameters))
             {
-                return new Product
+                while (reader.Read())
                 {
-                    Id = Convert.ToInt32(rdr["Id"]),
-                    Name = rdr["Name"].ToString(),
-                    Description = rdr["Description"].ToString(),
-                    Weight = Convert.ToDecimal(rdr["Weight"]),
-                    Height = Convert.ToDecimal(rdr["Height"]),
-                    Width = Convert.ToDecimal(rdr["Width"]),
-                    Length = Convert.ToDecimal(rdr["Length"])
-                };
-            });
+                    products.Add(new Product
+                    {
+                        Id = reader.GetInt32(0),
+                        Name = reader.GetString(1),
+                        Description = reader.GetString(2),
+                        Height = reader.GetDecimal(3),
+                        Width = reader.GetDecimal(4),
+                        Weight = reader.GetDecimal(5),
+                        Length = reader.GetDecimal(6),
+                    });
+                }
+            }
+
+            return products;
         }
     }
 }

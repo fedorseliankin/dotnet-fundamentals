@@ -107,5 +107,16 @@ namespace AdoNet.repositories
                 }
             }
         }
+
+        public IDataReaderWrapper ExecuteReaderWithConnection(string command, List<SqlParameter> parameters)
+        {
+            SqlConnection connection = new SqlConnection(ConnectionString);
+            connection.Open();
+            SqlCommand sqlCommand = new SqlCommand(command, connection);
+            sqlCommand.Parameters.AddRange(parameters.ToArray());
+
+            var reader = sqlCommand.ExecuteReader(CommandBehavior.CloseConnection);
+            return new SqlDataReaderWrapper(reader);
+        }
     }
 }

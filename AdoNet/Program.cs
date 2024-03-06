@@ -12,6 +12,6 @@ var order = new Order()
         UpdatedDate = DateTime.Now,
 };
 or.Add(order);
-var product = pr.Get(1);
+var product = pr.GetAll();
 
 Console.WriteLine(product.ToString());
