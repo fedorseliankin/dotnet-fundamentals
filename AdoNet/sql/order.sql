@@ -1,0 +1,8 @@
+﻿﻿CREATE TABLE [dbo].[Order]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[Status] NVARCHAR(50) NOT NULL,
+	[CreatedDate] DATETIME NOT NULL,
+	[UpdatedDate] DATETIME NOT NULL,
+	[ProductID] INT FOREIGN KEY REFERENCES Product(Id),
+)
